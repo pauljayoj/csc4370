@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Murder scene</title>
+<link rel="stylesheet" type="text/css" href="scene.css">
+</head>
+<body>
+<img src="MurderGameRoom.jpg" alt="Murder Scene" usemap="#murder_map">
+	<map name="murder_map">
+		<area href="murder_map_phone.html" alt="phone" target="_blank" 
+		shape=rect coords="155,430, 235,475">
+		<area href="murder_map_lipstick.html" alt="lipstick" target="_blank" 
+		shape=rect coords="980,410, 1010,410, 1010,470, 980,470">
+		<area href="murder_map_bootprint.html" alt="bootprint" target="_blank" 
+		shape=rect coords="510,695, 615,660, 610,765, 470,765">
+		<area href="murder_map_poison.html" alt="poison" target="_blank" 
+		shape=rect coords="835,515, 875,515, 875,615, 835,615">
+	</map>
+<div id="main">
+<p>Use the story to find clues in the room.</p>
+<form action="final1.html" method="post">
+<label class="heading">Select the clues you found and choose the killer:<br /><br /></label>
+<input type="checkbox" name="check_list[]" value="Poison bottle"><label>Poison bottle<br /></label>
+<input type="checkbox" name="check_list[]" value="Lipstick"><label>Lipstick<br /></label>
+<input type="checkbox" name="check_list[]" value="Footsteps"><label>Footsteps<br /></label>
+<input type="checkbox" name="check_list[]" value="Cellphone"><label>Cellphone<br /></label>
+<input type="checkbox" name="check_list[]" value="Camera"><label>Camera<br /></label>
+<input type="checkbox" name="check_list[]" value="Suicide note"><label>Suicide note<br /><br /></label>
+</div>
+<input type="submit" name="submit" Value="The Gardener"/>
+</form>
+<form action="final.html" method="post">
+<input type="submit" name="submit" Value="The Wife"/>
+</form>
+</body>
+</html>
